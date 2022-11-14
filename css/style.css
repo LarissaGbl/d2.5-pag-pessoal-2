@@ -18,17 +18,14 @@ body {
 
 header {
     margin: 70px auto;
-    padding: 45px;
+    padding: 50px;
     width: 72%;
     font-size: 12px;
 }
 
-header > figure {
-    margin-bottom: 15px;
-}
-
 header  img {
     width: 84px;
+    margin-bottom: 15px;
 }
 
 .center {
@@ -50,14 +47,13 @@ header > h2 {
     width: 292px;
     padding: 45px;
     margin: auto auto 130px;
-    border-radius: 5px;
+    border-radius: 11px;
     color: #4d3c64;
     line-height: 35px;
     box-shadow: -10px 8px 30px #312f2f;
 }
 
 #corpo > nav {
-    font-size: 14px;
     margin-bottom: 50px;
 }
 
@@ -75,7 +71,7 @@ nav > a {
 }
 
 #botao-inicio {
-    background-color: rgba(247, 247, 247, 0.952);
+    background-color: rgb(247, 247, 247);
     border-radius: 55%;
     position: fixed;
     bottom: 30%;
@@ -84,6 +80,8 @@ nav > a {
     height: 50px;
     text-align: center;
     font-size: 25px;
+    z-index: 1;
+    opacity: 0.3;
 }
 
 #botao-inicio i  {
@@ -115,18 +113,22 @@ nav > a {
     padding: 0px;
 }
 
+#contato .icon {
+    padding-right: 12px;
+}
+
 #habilidades > progress {
     accent-color: #2e2d4c;
 }
 
 footer {
     background-color: #1b1a2f;
-    padding: 85px;
+    padding: 120px;
     text-align: center;
 }
 
 footer > p {
-    font-size: 12px;
+    font-size: 10px;
     margin-bottom: 6px;
     color:#fff; 
 }
@@ -140,5 +142,71 @@ footer:hover > a {
     color: white;
 }
 
+/* -----Media queries ----*/
 
+/* -- dispositivo medium -- */
+@media (min-width: 720px) {
+    body {
+        background-size: 1000px;
+    }
+    header {
+        font-size: 17px;
+    }
+    header > h2 {
+        line-height: 30px;
+        font-size: 20px;
+    }
+    header  img {
+        width: 120px;
+        margin-bottom: 25px;
+    }
+    #corpo {
+        width: 72%;
+        padding: 60px;
+        font-size: 20px;
+        line-height: 50px;
+    }
+    #corpo > nav {
+        margin-top: 13px;
+    }
+    nav > a {
+        font-size: 1.1rem;
+        margin: auto 8px;
+    }
+    #sobre-mim > img {
+        width: 130px;
+    }
+    #botao-inicio {
+        width: 60px;
+        height: 60px;
+        bottom: 8%;
+    }
+    #botao-inicio i {
+        margin: 7px;
+        font-size: 45px;
+    }
+    .titulo {
+        font-size: 30px;
+    }
+    #portfolio > img {
+        width: 440px;
+        height: 245px;
+    }
+    #habilidades p {
+        display: inline-block;
+        width: 55%;
+    }
+    #habilidades progress {
+        display: inline-block;
+    }
+    footer {
+        height: 30%;
+    }
+    footer > p {
+        font-size: 16px;
+    }
+    footer .fab {
+        font-size: 22px;
+    }
+}
 
