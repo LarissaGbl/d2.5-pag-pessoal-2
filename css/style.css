@@ -10,6 +10,7 @@ body {
     background-color: #2E2D4C;
     background-image: url("../img/background-foods-v4.png");
     background-size: 414px;
+    background-attachment: fixed;
 }
 
 .page-scroll {
@@ -23,7 +24,7 @@ header {
     font-size: 12px;
 }
 
-header  img {
+header img {
     width: 84px;
     margin-bottom: 15px;
 }
@@ -62,6 +63,11 @@ nav > a {
     text-decoration: none;
     margin: auto 5px;
     font-size: 12px;
+}
+
+nav > a:hover {
+    color: #817f83;
+    text-decoration: underline;
 }
 
 #sobre-mim > img {
@@ -138,7 +144,7 @@ footer > a  {
     margin: auto 7px;
 }
 
-footer:hover > a {
+footer > a:hover {
     color: white;
 }
 
