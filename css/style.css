@@ -1,16 +1,11 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,900&family=Lora:wght@700&display=swap');
 
-* {
-    margin: 0px;
-    font-family: 'Lora', serif;
-}
-
-body {
+.background {
     background-color: #2E2D4C;
     background-image: url("../img/background-foods-v4.png");
-    background-size: 414px;
     background-attachment: fixed;
+    font-family: 'Lora', serif;
 }
 
 .page-scroll {
@@ -18,7 +13,7 @@ body {
 }
 
 header {
-    margin: 70px auto;
+    margin: 0px auto 70px;
     padding: 50px;
     width: 72%;
     font-size: 12px;
