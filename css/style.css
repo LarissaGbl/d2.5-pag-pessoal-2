@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,900&family=Lora:wght@700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
 }
@@ -87,7 +91,6 @@ nav > a:hover {
     height: 40px;
     text-align: center;
     z-index: 1;
-
     opacity: 0.3;
 }
 
@@ -156,8 +159,6 @@ footer > a:hover {
 }
 
 /* -----Media queries ----*/
-
-/* -- dispositivo medium -- */
 @media (min-width: 720px) {
     header {
         font-size: 1rem;
@@ -232,7 +233,7 @@ footer > a:hover {
         font-size: 1.5rem;
     }
     #habilidades p {
-        width: 50%;
+        width: 37%;
     }
     #portfolio > img {
         width: 300px;
