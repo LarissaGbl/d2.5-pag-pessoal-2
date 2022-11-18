@@ -1,11 +1,16 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,900&family=Lora:wght@700&display=swap');
 
+* {
+    margin: 0;
+}
+
 .background {
     background-color: #2E2D4C;
     background-image: url("../img/background-foods-v4.png");
     background-attachment: fixed;
     font-family: 'Lora', serif;
+    padding: 1px;
 }
 
 .page-scroll {
@@ -43,7 +48,7 @@ main {
     background-color: white;
     width: 72%;
     padding: 45px;
-    margin: 15px auto 0px;
+    margin: 15px auto 220px;
     border-radius: 11px;
     color: #4d3c64;
     line-height: 35px;
@@ -68,31 +73,36 @@ nav > a:hover {
 
 #sobre-mim > img {
     float: left;
-    margin-right: 10px;
+    margin-right: 15px;
     border-radius: 50%;
 }
 
 #botao-inicio {
-    background-color: rgb(247, 247, 247);
+    background-color: #fff;
     border-radius: 55%;
     position: fixed;
-    bottom: 30%;
+    bottom: 5%;
     right: 5%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     text-align: center;
-    font-size: 25px;
     z-index: 1;
+
     opacity: 0.3;
 }
 
-#botao-inicio i  {
-    margin: 10px;
+#botao-inicio:hover {
+    opacity: 1;
+}
+
+#botao-inicio i {
+    font-size: 2rem;
+    line-height: 2.5rem;
 }
 
 .titulo {
     font-family: 'Exo 2', sans-serif;
-    font-size: 22px;
+    font-size: 1.4rem;
     margin-top: 30px;
 }
 
@@ -124,54 +134,51 @@ nav > a:hover {
 }
 
 footer {
+    position: relative;
     background-color: #1b1a2f;
     padding: 120px;
     text-align: center;
 }
 
 footer > p {
-    font-size: 10px;
+    font-size: 0.6rem;
     margin-bottom: 10px;
     color:#fff; 
 }
 
 footer > a  {
+    color: #fff;
     margin: auto 7px;
 }
 
 footer > a:hover {
-    color: white;
+    color:#7e1cff;
 }
 
 /* -----Media queries ----*/
 
 /* -- dispositivo medium -- */
 @media (min-width: 720px) {
-    body {
-        background-size: 1000px;
-    }
     header {
-        font-size: 17px;
+        font-size: 1rem;
     }
     header > h2 {
-        line-height: 30px;
-        font-size: 20px;
+        line-height: 1.8rem;
+        font-size: 1.25rem
     }
     header  img {
         width: 120px;
         margin-bottom: 25px;
     }
-    #corpo {
-        width: 72%;
-        padding: 60px;
-        font-size: 20px;
-        line-height: 50px;
+    main {
+        font-size: 1.25rem;
+        line-height: 3.2rem;
     }
-    #corpo > nav {
+    main > nav {
         margin-top: 13px;
     }
     nav > a {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         margin: auto 8px;
     }
     #sobre-mim > img {
@@ -183,11 +190,12 @@ footer > a:hover {
         bottom: 8%;
     }
     #botao-inicio i {
-        margin: 7px;
-        font-size: 45px;
+        font-size: 2.8rem;
+        line-height: 3.5rem;
     }
     .titulo {
-        font-size: 30px;
+        font-size: 1.9rem;
+        margin-bottom: 10px;
     }
     #portfolio > img {
         width: 440px;
@@ -204,10 +212,30 @@ footer > a:hover {
         height: 30%;
     }
     footer > p {
-        font-size: 16px;
+        font-size: 1rem;
     }
     footer .icon {
-        font-size: 22px;
+        font-size: 1.4rem;
     }
 }
-
+@media (min-width: 1300px) {
+    header img {
+        width: 140px;
+    }
+    main {
+        width: 50%;
+        padding: 30px;
+        font-size: 1.1rem;
+        line-height: 2.3rem;
+    }
+    .titulo {
+        font-size: 1.5rem;
+    }
+    #habilidades p {
+        width: 50%;
+    }
+    #portfolio > img {
+        width: 300px;
+        height: 190px;
+    }
+}
